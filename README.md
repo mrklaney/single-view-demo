@@ -5,7 +5,7 @@
 In this demo/lab we demonstrate how HDP sandbox + HDF can be used to build a single view of a product or customer
 
 High level steps:
-- 1. Start HDP 2.3 sandbox and complete pre-req steps
+- 1. Start HDP 2.5 sandbox and complete pre-req steps
 - 2. Sqoop - import CRM/ERP data from DB/EDW into Hive 
 - 3. Nifi/Flume - Import simulated web traffic logs into Hive
 - 4. Nifi/Storm - import related tweets into Hive  
