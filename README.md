@@ -35,7 +35,7 @@ Notes:
 
 ## Step 1: Download and install the HDP Sandbox
 
-Download and install the HDP 2.3 Sandbox on your laptop by following these instructions:
+Download and install the HDP 2.5 Sandbox on your laptop by following these instructions:
 
 <http://hortonworks.com/products/hortonworks-sandbox/#install>
 
@@ -58,7 +58,7 @@ Start the sandbox, and note its IP address shown on the VBox/VMware screen. Add 
 192.168.191.241 sandbox.hortonworks.com sandbox    
 ```
 
-Note: The IP address will likely be different for you, use that. 
+Note: The IP address will likely be different for you. 
 
 The hosts file is located at `/etc/hosts` for Mac and Linux computers. For Windows it's normally at `\WINDOWS\system32\drivers\etc`. If it's not there, create one and add the entry as shown above.
 
@@ -118,7 +118,7 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
 - Pre-reqs:
   - HDP 2.3.2 sandbox (or later) where Zeppelin is already installed. Can be downloaded from [here](http://hortonworks.com/sandbox)
   - OR
-  - Ambari installed HDP cluster 
+  - Ambari installed HDP cluster (HDP 2.3.2 or later)
   
 - To Install:
   - To install this notebook on current [HDP sandbox](http://hortonworks.com/sandbox) (where Zeppelin is already installed):
@@ -135,7 +135,7 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
 
 #### Option 2: Lab/Workshop
 
-This is a longer version of the demo available as a hand-on half-day lab/workshop. This option includes features not available in the demo version:
+This is a longer version of the demo available as a hands-on half-day lab/workshop. This option includes features not available in the demo version:
   - YARN features (queues, preemption) 
   - Hive features (transactions and sessions)
   - security features (authorization policies and audit via Ranger)
