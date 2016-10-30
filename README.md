@@ -63,18 +63,27 @@ The username for SSH is "root", and the password is "hadoop." You'll be the root
 
 If you are using VirtualBox, Mac and Linux users can log in by:
 
+```
 $ ssh root@sandbox.hortonworks.com -p 2222
+```
+
 Windows users can use the Putty client to SSH using "root" and "hadoop" as the username and password respectively.
 
 If you are using VMWare you can do the same, but you'll find out quickly that the HDP2.5 Sandbox is using Docker technology and you will have to ssh to another Docker instance to continue the labs. To find the IP address of the Docker instance where Ambari is running, do
 
+```
 docker ps
+```
+
 Find the heading "CONTAINER ID" and make note of that value. Then do
 
 docker inspect 3c5e83f55983 | grep IPAddress
 where 3c5e83f55983 was my CONTAINER ID (and yours will be different). Make note of the IP-Address for the container and do
 
+```
 ssh 172.17.0.2
+```
+
 where 172.17.0.2 was my IP - yours might be different. Just like before the password is "hadoop." The Docker instance will ask you right away to create a new password. (see IMPORTANT at the end of this Step).
 
 ### Azure Sandbox
