@@ -149,9 +149,11 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
   - Also if necessary, install Zeppelin on the cluster (or older sandbox) by following steps here: [install Zeppelin via Ambari](https://github.com/hortonworks-gallery/ambari-zeppelin-service). In this case, this notebook will automatically be installed as one of the demo notebooks.
   
 - Now run through the 'Single view demo' notebook:
-  - launch Zeppelin UI on your sandbox/cluster e.g. http://sandbox.hortonworks.com:9995
+  - launch Zeppelin UI on your sandbox/cluster
+      click on Dashboard -> Zeppelin Notebook -> Quick Links ->  Zeppelin UI (or in a url http://sandbox.hortonworks.com:9995)
   - open the "Single view demo" notebook 
-  - run the setup steps
+  - If it appears, click "Save" for Interpreter Binding
+  - Follow the instructions in the notebook to run the setup steps
   - execute the cells one by one
 
 #### Option 2: Lab/Workshop
