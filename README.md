@@ -84,7 +84,8 @@ where 3c5e83f55983 was my CONTAINER ID (and yours will be different). Make note 
 ssh 172.17.0.2
 ```
 
-where 172.17.0.2 was my IP - yours might be different. Just like before the password is "hadoop." The Docker instance will ask you right away to create a new password. (see IMPORTANT at the end of this Step).
+where 172.17.0.2 was my IP - yours might be different. Just like before the password is "hadoop." The Docker instance will ask you right away to create a new password. 
+(see IMPORTANT at the end of this Step)
 
 ### Azure Sandbox
 Note down the public IP address of the Sandbox VM from the Azure Portal UI. Add the IP address into your laptop's "hosts" file so you don't need to type the Sandbox's IP address and can reach it much more conveniently at "sandbox.hortonworks.com". You will need to add a line similar to this in your hosts file:
@@ -133,9 +134,9 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
   - Code available [here](https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2BBBW75VS/note.json)
 
 - Pre-reqs:
-  - HDP 2.3.2 sandbox (or later) where Zeppelin is already installed. Can be downloaded from [here](http://hortonworks.com/sandbox)
+  - HDP 2.5 sandbox (or later) where Zeppelin is already installed. Can be downloaded from [here](http://hortonworks.com/sandbox)
   - OR
-  - Ambari installed HDP cluster (HDP 2.3.2 or later)
+  - Ambari installed HDP cluster (HDP 2.5 or later)
   
 - To Install:
   - To install this notebook on current [HDP sandbox](http://hortonworks.com/sandbox) (where Zeppelin is already installed):
