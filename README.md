@@ -139,15 +139,18 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
   - Ambari installed HDP cluster (HDP 2.5 or later)
   
 - To Install:
-  - To install this notebook on current [HDP sandbox](http://hortonworks.com/sandbox) (where Zeppelin is already installed):
+  - The notebook should already be installed. Look at the list of notebooks for "Single View demo."
+  - If needed, install the notebook on current [HDP sandbox](http://hortonworks.com/sandbox) (where Zeppelin is already installed):
+  
   ```
   curl -sSL https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/update_all_notebooks.sh | sudo -u zeppelin -E sh
   ```
-  - Otherwise, to install Zeppelin on a cluster (or older sandbox) follow steps to: [install Zeppelin via Ambari](https://github.com/hortonworks-gallery/ambari-zeppelin-service). In this case, this notebook will automatically be installed as one of the demo notebooks.
+  
+  - Also if necessary, install Zeppelin on the cluster (or older sandbox) by following steps here: [install Zeppelin via Ambari](https://github.com/hortonworks-gallery/ambari-zeppelin-service). In this case, this notebook will automatically be installed as one of the demo notebooks.
   
 - Now run through the 'Single view demo' notebook:
   - launch Zeppelin UI on your sandbox/cluster e.g. http://sandbox.hortonworks.com:9995
-  - open the "Single view" notebook 
+  - open the "Single view demo" notebook 
   - run the setup steps
   - execute the cells one by one
 
