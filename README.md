@@ -105,6 +105,9 @@ sudo su
 ```
 Again, enter the same password you used to SSH in. Now you should be the root user.
 
+#### Important Sandbox set-up steps
+
+Whether you installed locally or on Azure, look back on the Sandbox download website where there is one tutorial that has important Sandbox set-up steps. Under the "Hello World" heading find the tutorial called "Learning the Ropes of the Hortonworks Sandbox" and do it. Be sure to run the command ambari-admin-password-reset in order to set Ambari's login/password to admin/admin. Also follow the lab to bring up Ambari in a browser and log in as admin.
 
 ### Single View demo steps
 
