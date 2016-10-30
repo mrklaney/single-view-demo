@@ -52,25 +52,30 @@ You’ll be asked to specify the VM size while creating the Sandbox on Azure. Pl
 You'll need root priveleges to finish this lab. There are different ways to log into the Sandbox as the root user, depending on whether it's running locally on your laptop or if it's running on Azure.
 
 ### Local Sandbox
-Start the sandbox, and note its IP address shown on the VBox/VMware screen. Add the IP address into your laptop's "hosts" file so you don't need to type the Sandbox's IP address and can reach it much more conveniently at "sandbox.hortonworks.com". You will need to add a line similar to this in your hosts file:
+Start the sandbox, and note its IP address shown on the VBox/VMware screen. Add the IP address into your laptop's "hosts" file so you don't need to type the Sandbox's IP address and can reach it much more conveniently at "sandbox.hortonworks.com." You will need to add a line similar to this in your hosts file:
 
-```
 192.168.191.241 sandbox.hortonworks.com sandbox    
-```
+Note: The IP address will likely be different for you.
 
-Note: The IP address will likely be different for you. 
+The hosts file is located at /etc/hosts for Mac and Linux computers. For Windows it's normally at \WINDOWS\system32\drivers\etc. If it's not there, create one and add the entry as shown above.
 
-The hosts file is located at `/etc/hosts` for Mac and Linux computers. For Windows it's normally at `\WINDOWS\system32\drivers\etc`. If it's not there, create one and add the entry as shown above.
+The username for SSH is "root", and the password is "hadoop." You'll be the root user once logged in.
 
-The username for SSH is "root", and the password is "hadoop". You'll be the root user once logged in. Mac and Linux users can log in by:
+If you are using VirtualBox, Mac and Linux users can log in by:
 
+$ ssh root@sandbox.hortonworks.com -p 2222
+Windows users can use the Putty client to SSH using "root" and "hadoop" as the username and password respectively.
 
-```
-$ ssh root@sandbox.hortonworks.com
+If you are using VMWare you can do the same, but you'll find out quickly that the HDP2.5 Sandbox is using Docker technology and you will have to ssh to another Docker instance to continue the labs. To find the IP address of the Docker instance where Ambari is running, do
 
-```
+docker ps
+Find the heading "CONTAINER ID" and make note of that value. Then do
 
-Windows users can use the Putty client to SSH using "root" and "hadoop" as the username and password respectively. The hostname is "sandbox.hortonworks.com"
+docker inspect 3c5e83f55983 | grep IPAddress
+where 3c5e83f55983 was my CONTAINER ID (and yours will be different). Make note of the IP-Address for the container and do
+
+ssh 172.17.0.2
+where 172.17.0.2 was my IP - yours might be different. Just like before the password is "hadoop." The Docker instance will ask you right away to create a new password. (see IMPORTANT at the end of this Step).
 
 ### Azure Sandbox
 Note down the public IP address of the Sandbox VM from the Azure Portal UI. Add the IP address into your laptop's "hosts" file so you don't need to type the Sandbox's IP address and can reach it much more conveniently at "sandbox.hortonworks.com". You will need to add a line similar to this in your hosts file:
