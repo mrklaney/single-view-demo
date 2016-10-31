@@ -54,7 +54,10 @@ You'll need root priveleges to finish this lab. There are different ways to log 
 ### Local Sandbox
 Start the sandbox, and note its IP address shown on the VBox/VMware screen. Add the IP address into your laptop's "hosts" file so you don't need to type the Sandbox's IP address and can reach it much more conveniently at "sandbox.hortonworks.com." You will need to add a line similar to this in your hosts file:
 
+```
 192.168.191.241 sandbox.hortonworks.com sandbox    
+```
+
 Note: The IP address will likely be different for you.
 
 The hosts file is located at /etc/hosts for Mac and Linux computers. For Windows it's normally at \WINDOWS\system32\drivers\etc. If it's not there, create one and add the entry as shown above.
