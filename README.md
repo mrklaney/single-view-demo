@@ -162,8 +162,8 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
   - launch Zeppelin UI on your sandbox/cluster
       click on Dashboard -> Zeppelin Notebook -> Quick Links ->  Zeppelin UI (or in a url http://sandbox.hortonworks.com:9995)
   - open the "Single view demo" notebook 
-  - If it appears, click "Save" for Interpreter Binding
-  - Follow the instructions in the notebook to run the setup steps
+  - if needed, click "Save" for the Interpreter Binding
+  - follow the instructions in the notebook to run the setup steps
   - execute the cells one by one
 
 #### Option 2: Lab/Workshop
