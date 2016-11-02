@@ -90,7 +90,7 @@ Find the heading "CONTAINER ID" and make note of that value. Then do
 docker inspect 3c5e83f55983 | grep IPAddress
 ```
 
-where 3c5e83f55983 was my CONTAINER ID (and yours will be different). Make note of the IP-Address for the container and do
+where 3c5e83f55983 was my CONTAINER ID (and yours will be different). Your container should be named "sandbox." In that case you can use "sandbox" instead of the Container ID (i.e.  docker inspect sandbox | grep IPAddress). Make note of the IP-Address for the container and do
 
 ```
 ssh 172.17.0.2
