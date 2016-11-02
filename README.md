@@ -137,7 +137,7 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
 
 - Audience:
   - For those looking for an automated 'single view' demo with minimal CLI steps required
-  - For students enrolled into the "Technical Sales Professional" course
+  - For students enrolled into the "Technical Sales Professional" or the "Partnerworks Architecture Professional" course.
 
 - Materials:
   - Web version (readonly) of notebook available [here](https://www.zeppelinhub.com/viewer/notebooks/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hvcnRvbndvcmtzLWdhbGxlcnkvemVwcGVsaW4tbm90ZWJvb2tzL21hc3Rlci8yQkJCVzc1VlMvbm90ZS5qc29u)
