@@ -168,7 +168,7 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
 
 #### Option 2: Lab/Workshop
 
-This is a longer version of the demo available as a hands-on half-day lab/workshop. This option includes features not available in the demo version:
+This is a longer version of the demo available only for older versions of HDP as a hands-on half-day lab/workshop. This option includes features not available in the demo version:
   - YARN features (queues, preemption) 
   - Hive features (transactions and sessions)
   - security features (authorization policies and audit via Ranger)
