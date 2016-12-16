@@ -136,7 +136,7 @@ Whether you installed locally or on Azure, look back on the Sandbox download web
 This is a simplified version of the lab available as a Zeppelin notebook that automates the steps.
 
 - Audience:
-  - For those looking for an automated 'single view' demo with minimal CLI steps required
+  - For those looking for an automated 'single view' demo with a reduced number of CLI steps required
   - For students enrolled into the "Technical Sales Professional" or the "Partnerworks Architecture Professional" course.
 
 - Materials:
@@ -144,7 +144,7 @@ This is a simplified version of the lab available as a Zeppelin notebook that au
   - Code available [here](https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2BBBW75VS/note.json)
 
 - Pre-reqs:
-  - HDP 2.5 sandbox (or later) where Zeppelin is already installed. Can be downloaded from [here](http://hortonworks.com/sandbox)
+  - HDP 2.5 sandbox (or later) where Zeppelin is already installed. see Step 1 above
   - OR
   - Ambari installed HDP cluster (HDP 2.5 or later)
   
